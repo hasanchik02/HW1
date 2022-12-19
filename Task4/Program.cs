@@ -1,47 +1,20 @@
 ﻿// Задача 4: Напишите программу, которая принимает на вход 
 //три числа и выдает максимальное из этих чисел.
 
-Console.WriteLine("Введите три числа");
-int number1 = Convert.ToInt32(Console.ReadLine());
-int number2 = Convert.ToInt32(Console.ReadLine());
-int number3 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите 3 числа:");
+int num_1 = Convert.ToInt32(Console.ReadLine());
+int num_2 = Convert.ToInt32(Console.ReadLine());int num_3 = Convert.ToInt32(Console.ReadLine());
 
-if (number1 > number2)
-{
-    if (number1 > number3)
+int max = num_1;
+
+    if (num_2 > max)
     {
-        Console.WriteLine("Максимальное число");
-        Console.WriteLine(number1);
+        max = num_2;
     }
-    else
+
+    if (num_3 > max)
     {
-        Console.WriteLine("Максимальное число");
-        Console.WriteLine(number3);
+        max = num_3;
     }
-}
-if (number1 < number2)
-{
-    if (number2 > number3)
-    {
-        Console.WriteLine("Максимальное число");
-        Console.WriteLine(number2);
-    }
-    else
-    {
-        Console.WriteLine("Максимальное число");
-        Console.WriteLine(number3);
-    }
-}
-if (number1 == number2)
-{
-    if (number1 == number3)
-    {
-        Console.WriteLine("Все числа равны");
-        Console.WriteLine(number1);
-    }
-    else
-    {
-        Console.WriteLine("Максимальное число");
-        Console.WriteLine(number3);
-    }
-}
+
+ Console.WriteLine("Наибольшее из введённых чисел -> " + max);
